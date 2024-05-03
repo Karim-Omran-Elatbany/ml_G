@@ -3,4 +3,3 @@ flask
 tensorflow==2.15.0
 pillow
 numpy
-protobuf==9.4.0
