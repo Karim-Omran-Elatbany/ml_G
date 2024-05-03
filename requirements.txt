@@ -1,6 +1,6 @@
 gunicorn
-flask==2.2.2
-tensorflow==2.15.0
+flask
+tensorflow==2.3.0
 pillow
-numpy==1.26.4
-protobuf
+numpy
+protobuf==3.20.*
