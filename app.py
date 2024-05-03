@@ -7,9 +7,9 @@ app = Flask(__name__)
 
 def preprossing(image):
     image=Image.open(image)
-    image = image.resize((150, 150))
+    image = image.resize((224, 224))
     image_arr = np.array(image.convert('RGB'))
-    image_arr.shape = (1, 150, 150, 3)
+    image_arr.shape = (1, 224, 224, 3)
     return image_arr
 
 classes = ['Akhenaten', 'Bent pyramid for senefru', 'Colossal Statue of Ramesses II', 'Colossoi of Memnon', 'Goddess Isis with her child', 'Hatshepsut', 'Khafre Pyramid', 'King Thutmose III', 'Mask of Tutankhamun', 'Nefertiti', 'Pyramid_of_Djoser', 'Ramessum', 'Statue of King Zoser', 'Statue of Tutankhamun with Ankhesenamun', 'Temple_of_Isis_in_Philae', 'Temple_of_Kom_Ombo', 'The Great Temple of Ramesses II', 'amenhotep iii and tiye', 'bust of ramesses ii', 'head Statue of Amenhotep iii', 'menkaure pyramid', 'sphinx']
